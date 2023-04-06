@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import LandingPage from "./pages/LandingPage";
+import ShowDetailsPage from "./pages/ShowDetailsPage";
+import NoResults from "./pages/NoResults";
+import LoadingScreen from "./components/LoadingScreen";
+import About from "./components/About";
 
-function App() {
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Use setTimeout to simulate loading time
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        {isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <>
+            <Header />
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/show/:id" element={<ShowDetailsPage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<NoResults />} />
+            </Routes>
+            <Footer />
+          </>
+        )}
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

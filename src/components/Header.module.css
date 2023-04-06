@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2278cf;
+  color: #fff;
+  padding: 0 3rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-right: 2rem;
+  cursor: pointer;
+}
