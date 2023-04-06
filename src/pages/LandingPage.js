@@ -12,7 +12,7 @@ const LandingPage = () => {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    fetch("http://api.tvmaze.com/shows")
+    fetch("https://api.tvmaze.com/shows")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
