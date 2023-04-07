@@ -170,6 +170,10 @@
   margin-top: 2rem !important;
 }
 
+/* .cast-grid li img:hover {
+  transform: scale(1.1);
+} */
+
 .cast-grid li span {
   /* display: block; */
   margin-top: -5rem;
@@ -202,7 +206,8 @@
 }
 
 .cast-list li img {
-  max-width: 50px;
+  width: 70px;
+  height: 70px;
   margin-right: 2rem;
   border-radius: 50%;
 }
@@ -255,21 +260,26 @@ input {
 }
 
 .content {
-  width: 40%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   height: 85vh;
 }
 
 .svg_icons {
-  transform: scale(3);
+  transform: scale(5);
   color: #696969;
   padding: 20px;
 }
 
 .sad {
   font-size: 2rem;
+  /* margin-bottom: 10rem; */
+}
+
+.search-bar {
+  width: 90%;
 }
