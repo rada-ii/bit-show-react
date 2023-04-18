@@ -210,6 +210,8 @@
   height: 70px;
   margin-right: 2rem;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .cast-view-toggle {
