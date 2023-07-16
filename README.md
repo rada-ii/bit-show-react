@@ -1,7 +1,7 @@
 checkout live:
 https://bit-show-react.vercel.app/
 #
-This is web application for providing information to the users about TV shows from API endpoint !
+This is a React web application for providing information to the users about TV shows from API endpoint !
 
 # Getting Started with Create React App
 
