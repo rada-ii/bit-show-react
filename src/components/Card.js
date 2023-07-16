@@ -6,7 +6,7 @@ const Card = ({ show }) => {
 
   return (
     <Link to={`/show/${show.id}`} className="card">
-      <img src={show.image.medium} alt={show.name} />
+      <img className="bot-img" src={show.image.medium} alt={show.name} />
       <div className="card-footer">
         <p className="card-name">{show.name}</p>
         <div className="card-rating">
