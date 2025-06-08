@@ -9,7 +9,7 @@ A React web application for browsing and discovering TV shows using real-time AP
 ## ✨ Features
 
 - Browse TV shows from API
-- Search functionality
+- Search functionality by name
 - Show detailed information
 - Responsive design for all devices
 - Real-time data fetching
